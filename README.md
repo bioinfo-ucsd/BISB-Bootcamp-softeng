@@ -1,5 +1,7 @@
 # Module 7: Software Engineering on a Team
 
+## Table of Contents
+
 - [Before you begin](#before-you-begin)
 - [Brief Overview](#brief-overview)
 - [Activity](#activity)
@@ -86,7 +88,7 @@ git checkout $BRANCHNAME # checkout the branch
 git checkout -b $BRANCHNAME
 ```
 
-There is a file called `bootcamp/core/student_${xx}.py`, with the following contents:
+There is a file called `bootcamp/core/student_${xx}.py`
 
 <details>
   <summary>Show the code</summary>
