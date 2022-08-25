@@ -27,7 +27,7 @@ The major steps involved in this tutorial will be:
 3. Implementing a feature on a new branch (including tests)
 4. Opening a pull request for you new feature
 
-## Activity 
+## Activity
 
 ### 1. Create a fork of this repository
 
@@ -86,7 +86,7 @@ git checkout $BRANCHNAME # checkout the branch
 git checkout -b $BRANCHNAME
 ```
 
-There should be a file called `bootcamp/core/student_${xx}.py`, with the following contents:
+There is a file called `bootcamp/core/student_${xx}.py`, with the following contents:
 
 <details>
   <summary>Show the code</summary>
@@ -125,9 +125,12 @@ def count_substring(string, substring):
 
 ```
 
-<details>
+</details>
 
-And there should be corresponding tests in `bootcamp/core/tests/test_student_${xx}.py`
+And there is a corresponding tests in `bootcamp/core/tests/test_student_${xx}.py`
+
+<details>
+  <summary>Show the code</summary>
 
 ```python
 from bootcamp.core.student_xx import count_substring
@@ -161,13 +164,15 @@ def test_count_substring_none():
 
 ```
 
-**GOAL**: As a team we have decided that `count_substring` should be case insensitive, since `ACGT` is equivalent
+</details>
+
+**GOAL**: As a team we have decided that `count_substring()` should be case insensitive, since `ACGT` is equivalent
 to `acgt` for our DNA string use case.
 
 For this portion of the activity, you should
 
-1. Write test cases that test whether the existing `count_substring` code is case insensitive.
-2. Modify `count_substring` in your `student_xx.py` so that it is case insensitive (i.e., `'acgt' == 'ACGT', == 'aCgT'`).
+1. Write test cases that test whether the existing `count_substring()` code is case insensitive.
+2. Modify `count_substring()` in your `student_xx.py` so that it is case insensitive (i.e., `'acgt' == 'ACGT', == 'aCgT'`).
 3. Verify that your new code passes the unit tests you wrote. You can do that with the following (run from the root of the git repo):
 
     ```bash
