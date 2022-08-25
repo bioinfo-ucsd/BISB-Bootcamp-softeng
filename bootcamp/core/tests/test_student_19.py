@@ -1,4 +1,4 @@
-from bootcamp_module09.core.student_19 import count_substring  # noqa
+from bootcamp.core.student_19 import count_substring  # noqa
 
 
 def test_count_substring_single():
