@@ -12,19 +12,19 @@ def get_test_template(package, resource):
 
 def create_core_file_with_tests(module):
 
-    starter_code_path = resource_filename('bootcamp_module09.templates',
-                                          'count_substring.py',
+    starter_code_path = resource_filename('bootcamp.templates',
+                                          'count_substring.py.tmpl',
                                           )
-    module_package = 'bootcamp_module09.core'
+    module_package = 'bootcamp.core'
     module_relpath = module + '.py'
     module_path = resource_filename(module_package, module_relpath)
     shutil.copyfile(starter_code_path, module_path)
 
-    template = get_test_template('bootcamp_module09.templates',
-                                 'template_test_count_substring.py')
+    template = get_test_template('bootcamp.templates',
+                                 'template_test_count_substring.py.tmpl')
 
     test_contents = template.render(module=module) + '\n'
-    test_package = 'bootcamp_module09.core.tests'
+    test_package = 'bootcamp.core.tests'
     test_relpath = 'test_' + module + '.py'
     test_path = resource_filename(test_package, test_relpath)
     with open(test_path, 'w') as fh:
