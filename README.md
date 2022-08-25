@@ -36,7 +36,7 @@ The major steps involved in this tutorial will be:
 A **fork** acts as your copy of another repository, granting you administrative privileges,
 so you can change the code and commit history however you like.
 
-- Navigate to this repository: [github.com/bioinfo-ucsd/BISB-Bootcamp-2022-module-07](https://github.com/bioinfo-ucsd/BISB-Bootcamp-2022-module-07)
+- Navigate to this repository: [https://github.com/bioinfo-ucsd/BISB-Bootcamp-2022-module-07](https://github.com/bioinfo-ucsd/BISB-Bootcamp-2022-module-07)
 - **Fork** it (to your github account)
 
   ![fork a repo](images/fork-a-repo.png)
@@ -52,7 +52,7 @@ We can make a local copy of our fork by **cloning** the fork.
 ```bash
 GIT_USERNAME=<your-git-user-name-here>
 git clone https://github.com/${GIT_USERNAME}/BISB-Bootcamp-2022-module-07.git
-cd bisb-bootcamp-2021-module09
+cd BISB-Bootcamp-2022-module-07
 ```
 
 - Set the upstream remote (lets you pull code from the original owner's fork)
@@ -241,7 +241,7 @@ git push --set-upstream origin $BRANCHNAME
 
 (Note: origin tells git that it should push to your GitHub repo)
 
-You can then navigate to `https://github.com/bioinfo-ucsd/BISB-Bootcamp-2022-module-07`.
+You can then navigate to  [https://github.com/bioinfo-ucsd/BISB-Bootcamp-2022-module-07](https://github.com/bioinfo-ucsd/BISB-Bootcamp-2022-module-07).
 
 If you have pushed recently, you may notice a yellow/box that tells you that you can open a pull request.
 
