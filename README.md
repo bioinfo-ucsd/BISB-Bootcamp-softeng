@@ -2,13 +2,13 @@
 
 - [Before you begin](#before-you-begin)
 - [Brief Overview](#brief-overview)
-- [Activity Instructions](#activity-instructions)
-  1. [Create a fork of this repository](#1-create-a-fork-of-this-repository)
-  2. [Create a local copy of your fork](#2-create-a-local-copy-of-your-fork)
-  3. [Modifying the behavior of an existing feature in the repository](#3-modifying-the-behavior-of-an-existing-feature-in-the-repository)
-  4. [Adding a new feature to the repository](#4-adding-a-new-feature-to-the-repository)
-  5. [Opening a Pull Request](#5-opening-a-pull-request)
-
+- [Activity](#activity)
+  - [1. Create a fork of this repository](#1-create-a-fork-of-this-repository)
+  - [2. Create a local copy of your fork](#2-create-a-local-copy-of-your-fork)
+  - [3. Modifying the behavior of an existing feature in the repository](#3-modifying-the-behavior-of-an-existing-feature-in-the-repository)
+  - [4. Adding a new feature to the repository](#4-adding-a-new-feature-to-the-repository)
+  - [5. Opening a Pull Request](#5-opening-a-pull-request)
+  
 ## Before you begin
 
 1. Make sure you have a GitHub account. See [here](https://www.codecademy.com/articles/f1-u3-git-setup) for help.
@@ -27,24 +27,25 @@ The major steps involved in this tutorial will be:
 3. Implementing a feature on a new branch (including tests)
 4. Opening a pull request for you new feature
 
-## Activity Instructions
+## Activity 
 
 ### 1. Create a fork of this repository
 
-A fork starts as a copy of another repository, but gives you administrative privileges,
+A **fork** acts as your copy of another repository, granting you administrative privileges,
 so you can change the code and commit history however you like.
 
-- Navigate to this repository: https://github.com/bioinfo-ucsd/BISB-Bootcamp-2022-module-07
-- Fork it (should fork to your github account)
+- Navigate to this repository: [github.com/bioinfo-ucsd/BISB-Bootcamp-2022-module-07](https://github.com/bioinfo-ucsd/BISB-Bootcamp-2022-module-07)
+- **Fork** it (to your github account)
 
-  ![](images/fork-a-repo.png)
+  ![fork a repo](images/fork-a-repo.png)
   
 ### 2. Create a local copy of your fork
 
-Having a local copy of a repository will let you make edits to the code and
-commit history directly on your own machine.
+A local copy of this fork will let you make edits to the code and
+commit history directly from your computer.
+We can make a local copy of our fork by **cloning** the fork.
 
-- Clone the repository
+- **Clone** the repository
 
 ```bash
 GIT_USERNAME=<your-git-user-name-here>
@@ -69,17 +70,26 @@ pip install -e .
 
 ### 3. Modifying the behavior of an existing feature in the repository
 
-By this point, you should have been assigned a number `xx` for use during this activity.
+By this point, you have been assigned a number `xx` for use during this activity.
 
 In this section, you will modify the behavior of an existing feature in the repository.
 
 Before making any changes, you should checkout a new branch with a name like `BRANCHNAME=git-tutorial`
 
 ```bash
+BRANCHNAME=<your-branch-name-here>
+
+git branch $BRANCHNAME # create the branch
+git checkout $BRANCHNAME # checkout the branch
+
+# OR create and checkout a branch simultaneously
 git checkout -b $BRANCHNAME
 ```
 
 There should be a file called `bootcamp/core/student_${xx}.py`, with the following contents:
+
+<details>
+  <summary>Show the code</summary>
 
 ```python
 def count_substring(string, substring):
@@ -115,10 +125,12 @@ def count_substring(string, substring):
 
 ```
 
-And there should be corresponding tests in `bootcamp_module09/core/tests/test_student_${xx}.py`
+<details>
+
+And there should be corresponding tests in `bootcamp/core/tests/test_student_${xx}.py`
 
 ```python
-from bootcamp_module09.core.student_xx import count_substring
+from bootcamp.core.student_xx import count_substring
 
 
 def test_count_substring_single():
