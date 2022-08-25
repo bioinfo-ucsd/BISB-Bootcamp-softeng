@@ -1,10 +1,10 @@
 from setuptools import setup, find_packages
 
 setup(
-    name='bisb-module08',
+    name='bootcamp',
     version='0.1',
     packages=find_packages(),
-    description='Interactive Activity for BISB Bootcamp Module 8',
+    description='Interactive Git/Github Activity for BISB Bootcamp',
     long_description=open('README.md').read(),
     license='BSD-3-Clause',
     author='George Armstrong',
