@@ -1,5 +1,14 @@
 # Module 7: Software Engineering on a Team
 
+- [Before you begin](#before-you-begin)
+- [Brief Overview](#brief-overview)
+- [Activity Instructions](#activity-instructions)
+  1. [Create a fork of this repository](#1-create-a-fork-of-this-repository)
+  2. [Create a local copy of your fork](#2-create-a-local-copy-of-your-fork)
+  3. [Modifying the behavior of an existing feature in the repository](#3-modifying-the-behavior-of-an-existing-feature-in-the-repository)
+  4. [Adding a new feature to the repository](#4-adding-a-new-feature-to-the-repository)
+  5. [Opening a Pull Request](#5-opening-a-pull-request)
+
 ## Before you begin
 
 1. Make sure you have a GitHub account. See [here](https://www.codecademy.com/articles/f1-u3-git-setup) for help.
