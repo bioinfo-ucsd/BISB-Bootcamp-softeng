@@ -84,7 +84,7 @@ BRANCHNAME=<your-branch-name-here>
 git branch $BRANCHNAME # create the branch
 git checkout $BRANCHNAME # checkout the branch
 
-# OR create and checkout a branch simultaneously
+# OR create and checkout the branch simultaneously
 git checkout -b $BRANCHNAME
 ```
 
@@ -171,7 +171,7 @@ def test_count_substring_none():
 **GOAL**: As a team we have decided that `count_substring()` should be case insensitive, since `ACGT` is equivalent
 to `acgt` for our DNA string use case.
 
-For this portion of the activity, you should
+For this portion of the activity, you will
 
 1. Write test cases that test whether the existing `count_substring()` code is case insensitive.
 2. Modify `count_substring()` in your `student_xx.py` so that it is case insensitive (i.e., `'acgt' == 'ACGT', == 'aCgT'`).
