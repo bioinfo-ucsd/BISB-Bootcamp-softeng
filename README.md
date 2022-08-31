@@ -5,11 +5,11 @@
 - [Before you begin](#before-you-begin)
 - [Brief Overview](#brief-overview)
 - [Activity](#activity)
-  - [1. Create a fork of this repository](#1-create-a-fork-of-this-repository)
-  - [2. Create a local copy of your fork](#2-create-a-local-copy-of-your-fork)
-  - [3. Modifying the behavior of an existing feature in the repository](#3-modifying-the-behavior-of-an-existing-feature-in-the-repository)
-  - [4. Adding a new feature to the repository](#4-adding-a-new-feature-to-the-repository)
-  - [5. Opening a Pull Request](#5-opening-a-pull-request)
+  - [1. Create a local copy of your team's GitHub repository](#1-create-a-local-copy-of-your-teams-github-repository)
+  - [2. Modifying the behavior of an existing feature in the repository](#2-modifying-the-behavior-of-an-existing-feature-in-the-repository)
+  - [3. Adding a new feature to the repository](#3-adding-a-new-feature-to-the-repository)
+  - [4. Opening a Pull Request](#4-opening-a-pull-request)
+  - [5. Review another student's Pull Request](#5-review-another-students-pull-request)
   
 ## Before you begin
 
@@ -24,28 +24,20 @@ This module will cover using git/GitHub to contribute to an existing body of cod
 
 The major steps involved in this tutorial will be:
 
-1. Forking someone else's repository
-2. Creating a local copy of your fork
-3. Implementing a feature on a new branch (including tests)
-4. Opening a pull request for you new feature
+1. Creating a local copy of your team's GitHub repository.
+2. Implementing a feature and tests on a new branch
+3. Opening a pull request for your new feature
+4. Review a pull request and approve it
 
 ## Activity
-
-### 1. Create a fork of this repository
-
-A **fork** acts as your copy of another repository, granting you administrative privileges,
-so you can change the code and commit history however you like.
+  
+### 1. Create a local copy of your team's GitHub repository
 
 - Navigate to this repository: [https://github.com/bioinfo-ucsd/BISB-Bootcamp-2022-module-07](https://github.com/bioinfo-ucsd/BISB-Bootcamp-2022-module-07)
-- **Fork** it (to your github account)
 
-  ![fork a repo](images/fork-a-repo.png)
-  
-### 2. Create a local copy of your fork
-
-A local copy of this fork will let you make edits to the code and
+A local copy of this repo will let you make edits to the code and
 commit history directly from your computer.
-We can make a local copy of our fork by **cloning** the fork.
+We can make a local copy by **cloning** the repo.
 
 - **Clone** the repository
 
@@ -53,12 +45,6 @@ We can make a local copy of our fork by **cloning** the fork.
 GIT_USERNAME=<your-git-user-name-here>
 git clone https://github.com/${GIT_USERNAME}/BISB-Bootcamp-2022-module-07.git
 cd BISB-Bootcamp-2022-module-07
-```
-
-- Set the upstream remote (lets you pull code from the original owner's fork)
-
-```bash
-git remote add upstream https://github.com/bioinfo-ucsd/BISB-Bootcamp-2022-module-07.git
 ```
 
 - You can also install the python package in this directory at this time.
@@ -70,16 +56,17 @@ git remote add upstream https://github.com/bioinfo-ucsd/BISB-Bootcamp-2022-modul
 pip install -e .
 ```
 
-### 3. Modifying the behavior of an existing feature in the repository
+### 2. Modifying the behavior of an existing feature in the repository
 
 By this point, you have been assigned a number `xx` for use during this activity.
 
 In this section, you will modify the behavior of an existing feature in the repository.
 
-Before making any changes, you should checkout a new branch with a name like `BRANCHNAME=git-tutorial`
+Before making any changes, you should checkout a new branch.
 
 ```bash
-BRANCHNAME=<your-branch-name-here>
+xx=<your-number>
+BRANCHNAME=student-${xx}-branch
 
 git branch $BRANCHNAME # create the branch
 git checkout $BRANCHNAME # checkout the branch
@@ -203,29 +190,29 @@ For this portion of the activity, you will
 
     ```bash
     # stage your changes
-    git add bootcamp/core/student_${xx}.py bootcamp_module09/core/tests/test_student_${xx}.py
+    git add bootcamp/core/student_${xx}.py bootcamp/core/tests/test_student_${xx}.py
     # commit with an informative message
     git commit -m "ENH make count_substring case insensitive"
     ```
 
-### 4. Adding a new feature to the repository
+### 3. Adding a new feature to the repository
 
-*If you get to this step with fewer than 20 minutes left in the activity, go ahead and skip to the "**Opening a Pull Request**" section*
+*If you get to this step with fewer than 20 minutes left in the activity, go ahead and skip to the "**4. Opening a Pull Request**" section*
 
 In this section you will add a new feature to the repository.
 
 You should create a file called `bootcamp/contrib/student_${xx}` where you can implement your new feature.
 
-Once you have done this, you can repeat the steps above in the **Modifying the behavior of an existing feature 
+Once you have done this, you can repeat the steps above in the **Modifying the behavior of an existing feature
 in the repository**, except with a twist: you get to decide what your function does.
 
 A few guidelines that will help us moderate the activity:
 
 - Please do not import any modules that are not a part of the base python installation (e.g., no `numpy` etc.)
 - Please keep your new feature to fewer than 10 lines of code.
-- Make sure you run the test suite and style checks locally *before* advancing to "**Opening a Pull Request**"
+- Make sure you run the test suite and style checks locally *before* advancing to "**4. Opening a Pull Request**"
 
-### 5. Opening a Pull Request
+### 4. Opening a Pull Request
 
 After you have made all of the changes you have made (and committed them with `git commit`, you should push them to GitHub
 
@@ -236,24 +223,20 @@ git push
 If it is the first time you have pushed on a new branch, you will have to run
 
 ```bash
-git push --set-upstream origin $BRANCHNAME
+git push origin $BRANCHNAME
 ```
-
-(Note: origin tells git that it should push to your GitHub repo)
 
 You can then navigate to  [https://github.com/bioinfo-ucsd/BISB-Bootcamp-2022-module-07](https://github.com/bioinfo-ucsd/BISB-Bootcamp-2022-module-07).
 
-If you have pushed recently, you may notice a yellow/box that tells you that you can open a pull request.
+If you have pushed recently, you may notice a box that tells you that you can open a pull request (aka PR).
 
 Otherwise, you can
 
-1. Navigate to the  `Pull Requests` tab
+1. Navigate to the `Pull Requests` tab
 2. Click `New pull request` in green on the right-hand side of the page
-3. Click `compare across forks`
-4. Change the base repository to your repository
-5. Change the 'compare' branch to your new feature branch
+3. Change the 'compare' branch to your new feature branch
 
-Then, provide a description of your PR (including your student number, for this activity) and click `Create pull request`.
+Then, provide a description of your PR (including your student number for this activity) and click `Create pull request`.
 
 After submitting, make sure the automatic checks (GitHub Actions) pass (may
 take a couple minutes). If they fail, make sure your code
@@ -262,6 +245,42 @@ changes are passing the test suite and style checking locally.
 If you make any changes after opening a PR, you can always push more commits. The PR will automatically be updated
 and the CI checks will automatically be restarted.
 
-Once your CI checks pass, or if you are having issues, let the instructors know!
+### 5. Review another student's Pull Request
 
-We will try to provide feedback on your pull requests, as available.
+As a contributor to the repository, you can review another student's PR.
+
+1. Navigate to the `Pull Requests` tab and select the PR of another student according to the table below.
+2. Ensure that the PR is passing CI checks. If is not, investigate why it is failing.
+3. Examine the code of the PR. We encourage you to comment and make suggestions for improvement.
+4. Once you are satisfied with the PR, approve and merge it to the `master` branch.
+
+| Your Number | Number to Review |
+| ----------- | ---------------- |
+| 01          | 28               |
+| 02          | 27               |
+| 03          | 26               |
+| 04          | 25               |
+| 05          | 24               |
+| 06          | 23               |
+| 07          | 22               |
+| 08          | 21               |
+| 09          | 20               |
+| 10          | 19               |
+| 11          | 18               |
+| 12          | 17               |
+| 13          | 16               |
+| 14          | 15               |
+| 15          | 14               |
+| 16          | 13               |
+| 17          | 12               |
+| 18          | 11               |
+| 19          | 10               |
+| 20          | 09               |
+| 21          | 08               |
+| 22          | 07               |
+| 23          | 06               |
+| 24          | 05               |
+| 25          | 04               |
+| 26          | 03               |
+| 27          | 02               |
+| 28          | 01               |
