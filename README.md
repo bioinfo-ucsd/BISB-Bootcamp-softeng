@@ -32,8 +32,7 @@ We can make a local copy by **cloning** the repo.
 - **Clone** the repository
 
 ```bash
-GIT_USERNAME=<your-git-user-name-here>
-git clone https://github.com/${GIT_USERNAME}/BISB-Bootcamp-2022-module-07.git
+git clone https://github.com/bioinfo-ucsd/BISB-Bootcamp-2022-module-07.git
 cd BISB-Bootcamp-2022-module-07
 ```
 
