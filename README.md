@@ -3,7 +3,6 @@
 ## Table of Contents
 
 - [Before you begin](#before-you-begin)
-- [Brief Overview](#brief-overview)
 - [Activity](#activity)
   - [1. Create a local copy of your team's GitHub repository](#1-create-a-local-copy-of-your-teams-github-repository)
   - [2. Modifying the behavior of an existing feature in the repository](#2-modifying-the-behavior-of-an-existing-feature-in-the-repository)
@@ -19,17 +18,6 @@
 1. Make sure you have a GitHub account. See [here](https://www.codecademy.com/articles/f1-u3-git-setup) for help.
 2. Authenticate GitHub from your computer and allow git to remember by caching your GitHub credentials. See [this page](https://docs.github.com/en/github/using-git/caching-your-github-credentials-in-git) for details. We suggest using the GitHub Command Line Interface (CLI), `gh`, which is installed on DataHub.
 3. Everyone will be assigned a number xx (e.g., 01-99)
-
-## Brief Overview
-
-This module will cover using git/GitHub to contribute to an existing body of code.
-
-The major steps involved in this tutorial will be:
-
-1. Creating a local copy of your team's GitHub repository.
-2. Implementing a feature and tests on a new branch
-3. Opening a pull request for your new feature
-4. Review a pull request and approve it
 
 ## Activity
   
