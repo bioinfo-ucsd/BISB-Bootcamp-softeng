@@ -14,8 +14,7 @@
 ## Before you begin
 
 1. Make sure you have a GitHub account. See [here](https://www.codecademy.com/articles/f1-u3-git-setup) for help.
-2. (Optional) You may want to cache your GitHub credentials in git so you do not repeatedly have to enter your
-password. See [this page](https://docs.github.com/en/github/using-git/caching-your-github-credentials-in-git) for details.
+2. Authenticate GitHub from your computer and allow git to remember by caching your GitHub credentials. See [this page](https://docs.github.com/en/github/using-git/caching-your-github-credentials-in-git) for details. We suggest using the GitHub Command Line Interface (CLI), `gh`, which is installed on DataHub.
 3. Everyone will be assigned a number xx (e.g., 01-99)
 
 ## Brief Overview
@@ -284,3 +283,4 @@ As a contributor to the repository, you can review another student's PR.
 | 26          | 03               |
 | 27          | 02               |
 | 28          | 01               |
+
