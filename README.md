@@ -10,6 +10,9 @@
   - [3. Adding a new feature to the repository](#3-adding-a-new-feature-to-the-repository)
   - [4. Opening a Pull Request](#4-opening-a-pull-request)
   - [5. Review another student's Pull Request](#5-review-another-students-pull-request)
+- [Additional Resources](#additional-resources)
+  - [Git](#git)
+  - [GitHub](#github)
   
 ## Before you begin
 
@@ -284,3 +287,18 @@ As a contributor to the repository, you can review another student's PR.
 | 27          | 02               |
 | 28          | 01               |
 
+## Additional Resources
+
+If you would like to learn more about git and GitHub, we like the following resources:
+
+### Git
+
+1. [Git Cheatsheet](https://education.github.com/git-cheat-sheet-education.pdf) provided by GitHub is great pocket reference to keep around as you work with git.
+2. If you're still having a hard time wrapping your head around what's going on when you use git (we don't blame you), we recommend the interactive and visual tutorial [Learn Git Branching](https://learngitbranching.js.org/).
+3. [git-scm.com](https://git-scm.com/) holds the official documentation for git. It is a very detailed reference of git's functionality.
+
+### GitHub
+
+1. [GitHub Skills](https://skills.github.com/) has over 10 courses that cover in more detail the concepts we highlighted today and showcases more of what GitHub Actions are capable of.
+2. Checkout various branching workflows. Here we used the simple [GitHub flow](https://docs.github.com/en/get-started/quickstart/github-flow), but those who are developing complex software on bigger teams may want to explore the more involved [git-flow](https://nvie.com/posts/a-successful-git-branching-model/)
+3. [GitHub Docs](https://docs.github.com/en) is where you can find answers to virtually any question about GitHub features.
