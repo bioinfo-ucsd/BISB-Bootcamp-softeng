@@ -223,9 +223,9 @@ Otherwise, you can
 
 1. Navigate to the `Pull Requests` tab
 2. Click `New pull request` in green on the right-hand side of the page
-3. Change the 'compare' branch to your new feature branch
+3. Change the 'compare' branch to your new feature branch. 
 
-Then, provide a description of your PR (including your student number for this activity) and click `Create pull request`.
+Keep the automatically filled PR name, provide a description of your PR (including your student number for this activity) and click `Create pull request`.
 
 After submitting, make sure the automatic checks (GitHub Actions) pass (may
 take a couple minutes). If they fail, make sure your code
