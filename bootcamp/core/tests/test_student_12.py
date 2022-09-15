@@ -10,6 +10,15 @@ def test_count_substring_single():
     assert expected_count == observed_count
 
 
+def test_count_substring_insensitive():
+    test_string = "AGTCCCCTAGA"
+    test_substring = "cccc"
+
+    expected_count = 1
+    observed_count = count_substring(test_string, test_substring)
+    assert expected_count == observed_count
+
+
 def test_count_substring_repeated():
     test_string = "AGCTAGCAGT"
     test_substring = "AGC"
