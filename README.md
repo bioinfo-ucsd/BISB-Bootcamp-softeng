@@ -161,22 +161,10 @@ For this portion of the activity, you will
     pytest
     ```
 
-    If you do not have pytest installed, you can install it with
-
-    ```bash
-    pip install -U pytest
-    ```
-
 4. Verify that the code you wrote passes the style checks. You can do that with the following command (run from the root of the git repo)
 
     ```bash
     flake8
-    ```
-
-    If you do not have flake8 installed, you can install it with
-
-    ```bash
-    pip install -U flake8 
     ```
 
 5. Once you are satisfied with your changes, you should make sure to commit them to your branch:
