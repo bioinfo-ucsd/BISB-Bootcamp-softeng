@@ -12,7 +12,7 @@ def test_count_substring_single():
 
 def test_count_substring_repeated():
     test_string = "AGCTAGCAGT"
-    test_substring = "AGC"
+    test_substring = "agc"
 
     expected_count = 2
     observed_count = count_substring(test_string, test_substring)
