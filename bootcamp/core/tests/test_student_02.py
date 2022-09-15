@@ -3,7 +3,7 @@ from bootcamp.core.student_02 import count_substring  # noqa
 
 def test_count_substring_single():
     test_string = "CGCTAGCGT"
-    test_substring = "TAG"
+    test_substring = "TAg"
 
     expected_count = 1
     observed_count = count_substring(test_string, test_substring)
@@ -12,7 +12,7 @@ def test_count_substring_single():
 
 def test_count_substring_repeated():
     test_string = "AGCTAGCAGT"
-    test_substring = "AGC"
+    test_substring = "AgC"
 
     expected_count = 2
     observed_count = count_substring(test_string, test_substring)
@@ -20,8 +20,8 @@ def test_count_substring_repeated():
 
 
 def test_count_substring_none():
-    test_string = "AGTCCCCTAGA"
-    test_substring = "AAA"
+    test_string = "AGtCCCCTAGA"
+    test_substring = "aaA"
 
     expected_count = 0
     observed_count = count_substring(test_string, test_substring)
