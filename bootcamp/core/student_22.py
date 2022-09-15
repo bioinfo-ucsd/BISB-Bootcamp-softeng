@@ -14,11 +14,12 @@ def count_substring(string, substring):
         The number of times `substring` occurs in `string`
 
     """
-    count = 0
+    string, substring = string.lower(), substring.lower()
+    string_length, substring_length = len(string), len(substring)
 
-    string_length = len(string)
-    substring_length = len(substring)
     n_subsequences = string_length - substring_length + 1
+
+    count = 0
 
     for i in range(n_subsequences):
         left_bound = i
