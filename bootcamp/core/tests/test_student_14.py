@@ -26,3 +26,12 @@ def test_count_substring_none():
     expected_count = 0
     observed_count = count_substring(test_string, test_substring)
     assert expected_count == observed_count
+
+
+def case_insensitive():
+    test_string = "AGTCCcCTAGA"
+    test_substring = "CCC"
+    expected_count = 2
+
+    observed_count = count_substring(test_string, test_substring)
+    assert expected_count == observed_count
