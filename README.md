@@ -15,9 +15,13 @@
   
 ## Before you begin
 
-1. Make sure you have a GitHub account. See [here](https://www.codecademy.com/articles/f1-u3-git-setup) for help.
-2. Authenticate GitHub from your computer and allow git to remember by caching your GitHub credentials. See [this page](https://docs.github.com/en/github/using-git/caching-your-github-credentials-in-git) for details. We suggest using the GitHub Command Line Interface (CLI), `gh`, which is installed on DataHub.
-3. Everyone will be assigned a number xx (e.g., 01-99)
+1. Everyone will be assigned a number xx (e.g., 01-99)
+2. Authenticate GitHub from your computer and allow git to remember by caching your GitHub credentials. See [this page](https://docs.github.com/en/github/using-git/caching-your-github-credentials-in-git) for details. We suggest using the GitHub Command Line Interface (CLI), `gh`, which is installed in the `bootcamp` conda environment on DataHub. Start a new terminal session and run the following.
+
+    ```bash
+    source activate bootcamp
+    gh auth login -p https -w
+    ```
 
 ## Activity
   
@@ -245,34 +249,32 @@ As a contributor to the repository, you can review another student's PR.
 
 | Your Number | Number to Review |
 | ----------- | ---------------- |
-| 01          | 28               |
-| 02          | 27               |
-| 03          | 26               |
-| 04          | 25               |
-| 05          | 24               |
-| 06          | 23               |
-| 07          | 22               |
-| 08          | 21               |
-| 09          | 20               |
-| 10          | 19               |
-| 11          | 18               |
-| 12          | 17               |
-| 13          | 16               |
-| 14          | 15               |
-| 15          | 14               |
-| 16          | 13               |
-| 17          | 12               |
-| 18          | 11               |
-| 19          | 10               |
-| 20          | 09               |
-| 21          | 08               |
-| 22          | 07               |
-| 23          | 06               |
-| 24          | 05               |
-| 25          | 04               |
-| 26          | 03               |
-| 27          | 02               |
-| 28          | 01               |
+| 01          | 26               |
+| 02          | 25               |
+| 03          | 24               |
+| 04          | 23               |
+| 05          | 22               |
+| 06          | 21               |
+| 07          | 20               |
+| 08          | 19               |
+| 09          | 18               |
+| 10          | 17               |
+| 11          | 16               |
+| 12          | 15               |
+| 13          | 14               |
+| 14          | 13               |
+| 15          | 12               |
+| 16          | 11               |
+| 17          | 10               |
+| 18          | 09               |
+| 19          | 08               |
+| 20          | 07               |
+| 21          | 06               |
+| 22          | 05               |
+| 23          | 04               |
+| 24          | 03               |
+| 25          | 02               |
+| 26          | 01               |
 
 ## Additional Resources
 
