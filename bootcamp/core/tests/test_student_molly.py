@@ -1,6 +1,5 @@
 from bootcamp.core.student_molly import count_substring  # noqa
 
-
 def test_count_substring_single():
     test_string = "CGCTAGCGT"
     test_substring = "TAG"
@@ -8,7 +7,6 @@ def test_count_substring_single():
     expected_count = 1
     observed_count = count_substring(test_string, test_substring)
     assert expected_count == observed_count
-
 
 def test_count_substring_repeated():
     test_string = "AGCTAGCAGT"
@@ -18,7 +16,6 @@ def test_count_substring_repeated():
     observed_count = count_substring(test_string, test_substring)
     assert expected_count == observed_count
 
-
 def test_count_substring_none():
     test_string = "AGTCCCCTAGA"
     test_substring = "AAA"
@@ -26,8 +23,6 @@ def test_count_substring_none():
     expected_count = 0
     observed_count = count_substring(test_string, test_substring)
     assert expected_count == observed_count
-
-
 
 def test_count_substring_lower():
     test_string = "AGTCCCCTAGA"
