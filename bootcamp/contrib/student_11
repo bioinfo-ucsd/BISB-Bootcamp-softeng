@@ -1,8 +1,0 @@
-[Goal]
-make count_substring case insensitive
-
-[File]
-bootcamp/core/student_11.py
-
-[Details]
-convert every string into lowercase
