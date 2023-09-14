@@ -23,7 +23,7 @@
   
 ### 1. Create a local copy of your team's GitHub repository
 
-- Navigate to this repository: [https://github.com/bioinfo-ucsd/BISB-Bootcamp-2022-module-07](https://github.com/bioinfo-ucsd/BISB-Bootcamp-2022-module-07)
+- Navigate to this repository: [[https://github.com/bioinfo-ucsd/BISB-Bootcamp-2022-module-07](https://github.com/bioinfo-ucsd/BISB-Bootcamp-2022-module-07](https://github.com/bioinfo-ucsd/BISB-Bootcamp-module-07))
 
 A local copy of this repo will let you make edits to the code and
 commit history directly from your computer.
@@ -32,8 +32,8 @@ We can make a local copy by **cloning** the repo.
 - **Clone** the repository
 
 ```bash
-git clone https://github.com/bioinfo-ucsd/BISB-Bootcamp-2022-module-07.git
-cd BISB-Bootcamp-2022-module-07
+git clone git@github.com:bioinfo-ucsd/BISB-Bootcamp-module-07.git
+cd BISB-Bootcamp-module-07
 ```
 
 - You can also install the python package in this directory at this time.
@@ -215,7 +215,7 @@ If it is the first time you have pushed on a new branch, you will have to run
 git push origin $BRANCHNAME
 ```
 
-You can then navigate to  [https://github.com/bioinfo-ucsd/BISB-Bootcamp-2022-module-07](https://github.com/bioinfo-ucsd/BISB-Bootcamp-2022-module-07).
+You can then navigate to  [https://github.com/bioinfo-ucsd/BISB-Bootcamp-module-07](https://github.com/bioinfo-ucsd/BISB-Bootcamp-module-07).
 
 If you have pushed recently, you may notice a box that tells you that you can open a pull request (aka PR).
 
