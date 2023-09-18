@@ -1,4 +1,4 @@
-from bootcamp.core.student_22 import count_substring  # noqa
+from bootcamp.core.student_22 import count_substring
 
 
 def test_count_substring_single():
@@ -24,5 +24,32 @@ def test_count_substring_none():
     test_substring = "AAA"
 
     expected_count = 0
+    observed_count = count_substring(test_string, test_substring)
+    assert expected_count == observed_count
+
+
+def test_count_substring_case_sensitive_substring():
+    test_string = "AGATGCCAATGC"
+    test_substring = "atg"
+
+    expected_count = 2
+    observed_count = count_substring(test_string, test_substring)
+    assert expected_count == observed_count
+
+
+def test_count_substring_case_sensitive_string():
+    test_string = "actgttgcaaa"
+    test_substring = "GTT"
+
+    expected_count = 1
+    observed_count = count_substring(test_string, test_substring)
+    assert expected_count == observed_count
+
+
+def test_count_substring_case_sensitive_mixed():
+    test_string = "actGGtAAaCTg"
+    test_substring = "ctG"
+
+    expected_count = 2
     observed_count = count_substring(test_string, test_substring)
     assert expected_count == observed_count
