@@ -1,4 +1,5 @@
 from bootcamp.core.student_18 import count_substring  # noqa
+from bootcamp.contrib.student_18 import count_substring_but_i_express_pain
 
 
 def test_count_substring_single():
@@ -37,3 +38,9 @@ def test_count_substring_case_insensitive():
     count_upper = count_substring(test_string, test_substring_upper)
     count_lower = count_substring(test_string, test_substring_lower)
     assert expected_count == count_upper and expected_count == count_lower
+    
+def make_it_hurt():
+    test_string = "AGTCCCCTAGA"
+    test_substring_lower = "ccc"
+    expected_ouch = "GAH"
+    assert count_substring_but_i_express_pain(test_string, test_substring) == expected_ouch
