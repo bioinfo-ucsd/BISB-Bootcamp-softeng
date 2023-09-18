@@ -1,21 +1,19 @@
-def count_substring(string, substring):
-    """Counts the number of occurrences of `substring` in `string`
+def loc_substring(string, substring):
+    """Locates, if any, the first occurrence of `substring` in `string`
 
     Parameters
     ----------
     string : str
-        The string to count within
+        The string to locate substring within it
     substring : str
-        The value to count in string
+        The value to locate in string
 
     Returns
     -------
     int
-        The number of times `substring` occurs in `string`
+        The first location of `substring` in `string`
 
     """
-    count = 0
-
     string = string.lower()
     substring = substring.lower()
 
@@ -28,6 +26,6 @@ def count_substring(string, substring):
         right_bound = i + substring_length
         candidate_substring = string[left_bound:right_bound]
         if candidate_substring == substring:
-            count += 1
+            return i
 
-    return count
+    return -1
