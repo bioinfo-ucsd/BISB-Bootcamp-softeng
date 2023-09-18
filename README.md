@@ -207,7 +207,7 @@ If it is the first time you have pushed on a new branch, you will have to run
 git push origin $BRANCHNAME
 ```
 
-You can then navigate to  [https://github.com/bioinfo-ucsd/BISB-Bootcamp-module-07](https://github.com/bioinfo-ucsd/BISB-Bootcamp-softeng).
+You can then navigate to  [https://github.com/bioinfo-ucsd/BISB-Bootcamp-softeng](https://github.com/bioinfo-ucsd/BISB-Bootcamp-softeng).
 
 If you have pushed recently, you may notice a box that tells you that you can open a pull request (aka PR).
 
