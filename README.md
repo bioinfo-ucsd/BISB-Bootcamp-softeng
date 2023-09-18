@@ -1,4 +1,4 @@
-# Module 7: Software Engineering on a Team
+# Module 2: Software Engineering on a Team
 
 ## Table of Contents
 
