@@ -9,6 +9,6 @@ def reverse_comp(string):
             result += "C"
         elif c == "T" or c == "t":
             result += "A"
-        else: 
+        else:
             result += "N"
     return result

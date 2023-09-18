@@ -8,9 +8,10 @@ def test_reverse_comp():
     observed_result = reverse_comp(string)
     assert observed_result == expected_result
 
+
 def test_empty():
     string = ""
     expected_result = ""
-    
+
     observed_result = reverse_comp(string)
     assert observed_result == expected_result
