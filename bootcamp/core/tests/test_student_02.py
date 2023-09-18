@@ -27,6 +27,7 @@ def test_count_substring_none():
     observed_count = count_substring(test_string, test_substring)
     assert expected_count == observed_count
 
+
 def test_count_substring_single_insensitive():
     test_string = "CgcTaGcGt"
     test_substring = "TAg"
@@ -34,6 +35,7 @@ def test_count_substring_single_insensitive():
     expected_count = 1
     observed_count = count_substring(test_string, test_substring)
     assert expected_count == observed_count
+
 
 def test_count_substring_repeated_insensitive():
     test_string = "AgcTAGcaGT"
