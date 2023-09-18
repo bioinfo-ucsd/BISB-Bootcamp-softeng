@@ -23,8 +23,8 @@ def count_substring(string, substring):
     for i in range(n_subsequences):
         left_bound = i
         right_bound = i + substring_length
-        candidate_substring = string[left_bound:right_bound]
-        if candidate_substring == substring:
+        candidate_substring = string[left_bound:right_bound].lower()
+        if candidate_substring == substring.lower():
             count += 1
 
     return count
