@@ -26,3 +26,28 @@ def test_count_substring_none():
     expected_count = 0
     observed_count = count_substring(test_string, test_substring)
     assert expected_count == observed_count
+
+def test_count_substring_single_insensitive():
+    test_string = "CgcTaGcGt"
+    test_substring = "TAg"
+
+    expected_count = 1
+    observed_count = count_substring(test_string, test_substring)
+    assert expected_count == observed_count
+
+def test_count_substring_repeated_insensitive():
+    test_string = "AgcTAGcaGT"
+    test_substring = "AgC"
+
+    expected_count = 2
+    observed_count = count_substring(test_string, test_substring)
+    assert expected_count == observed_count
+
+
+def test_count_substring_none_insensitive():
+    test_string = "AGTccccTAGA"
+    test_substring = "aAa"
+
+    expected_count = 0
+    observed_count = count_substring(test_string, test_substring)
+    assert expected_count == observed_count
