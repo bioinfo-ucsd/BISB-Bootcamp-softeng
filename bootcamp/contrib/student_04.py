@@ -26,6 +26,6 @@ def loc_substring(string, substring):
         right_bound = i + substring_length
         candidate_substring = string[left_bound:right_bound]
         if candidate_substring == substring:
-            return i 
+            return i
 
     return -1
