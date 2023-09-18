@@ -31,8 +31,7 @@ def test_count_substring_none():
 def test_case_sensitive():
     test_string = 'AGCTAGCAGT'
     test_substring = 'agc'
-    
+
     expected_count = 2
     observed_count = count_substring(test_string, test_substring)
     assert expected_count == observed_count
-    
