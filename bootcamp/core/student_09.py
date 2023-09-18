@@ -19,12 +19,20 @@ def count_substring(string, substring):
     string_length = len(string)
     substring_length = len(substring)
     n_subsequences = string_length - substring_length + 1
-
+    
+    dict = {"A":"a", "T":"t", "C":"c", "G":"g","a":"A","t":"T",}
+    
     for i in range(n_subsequences):
         left_bound = i
         right_bound = i + substring_length
         candidate_substring = string[left_bound:right_bound]
         if candidate_substring == substring:
             count += 1
-
+        else for j in range(substring_length):
+            nucleotide = {n for n in dic if dic[subtring[j]]==subtring[j]}
+            candidate_substring = candidate_substring[:j]+ nucleotide + candidate_substring[j+1::]
+            if candidate_substring == substring:
+            count += 1
     return count
+
+
