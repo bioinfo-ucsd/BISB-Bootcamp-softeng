@@ -19,12 +19,14 @@ def count_substring(string, substring):
     string_length = len(string)
     substring_length = len(substring)
     n_subsequences = string_length - substring_length + 1
+    upper_string = string.upper()
+    upper_substring = substring.upper()
 
     for i in range(n_subsequences):
         left_bound = i
         right_bound = i + substring_length
-        candidate_substring = string[left_bound:right_bound]
-        if candidate_substring == substring:
+        candidate_substring = upper_string[left_bound:right_bound]
+        if candidate_substring == upper_substring:
             count += 1
 
     return count
