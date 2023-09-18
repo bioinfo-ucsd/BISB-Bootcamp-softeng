@@ -10,6 +10,15 @@ def test_count_substring_single():
     assert expected_count == observed_count
 
 
+def test_case_sensitivity():
+    test_string = "AAAcaaa"
+    test_substring = "AAA"
+
+    expected_count = 2
+    observed_count = count_substring(test_string, test_substring)
+    assert expected_count == observed_count
+
+
 def test_count_substring_repeated():
     test_string = "AGCTAGCAGT"
     test_substring = "AGC"
