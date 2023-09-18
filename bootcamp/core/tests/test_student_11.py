@@ -1,5 +1,6 @@
 from bootcamp.core.student_11 import count_substring  # noqa
 
+
 def test_count_substring_case():
     test_string_caps = "CGCTAGCGT"
     test_sub_caps = "tag"
@@ -8,6 +9,7 @@ def test_count_substring_case():
     capitol_count = count_substring(test_string_caps, test_sub_lows)
     lower_count = count_substring(test_string_caps, test_sub_caps)
     assert capitol_count == lower_count
+
 
 def test_count_substring_single():
     test_string = "CGCTAGCGT"
