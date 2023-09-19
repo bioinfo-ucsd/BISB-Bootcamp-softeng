@@ -36,7 +36,7 @@ We can make a local copy by **cloning** the repo.
 - **Clone** the repository
 
 ```bash
-git clone git@github.com:bioinfo-ucsd/BISB-Bootcamp-softeng.git
+git clone https://github.com/bioinfo-ucsd/BISB-Bootcamp-softeng.git
 cd BISB-Bootcamp-softeng
 ```
 
