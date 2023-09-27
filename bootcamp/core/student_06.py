@@ -14,6 +14,9 @@ def count_substring(string, substring):
         The number of times `substring` occurs in `string`
 
     """
+
+    string = string.upper()
+    substring = substring.upper()
     count = 0
 
     string_length = len(string)
