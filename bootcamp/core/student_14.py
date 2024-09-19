@@ -6,7 +6,7 @@ def count_substring(string, substring):
     string : str
         The string to count within
     substring : str
-        The value to count in string
+        The value to count in string, case insensitive
 
     Returns
     -------
@@ -15,6 +15,9 @@ def count_substring(string, substring):
 
     """
     count = 0
+
+    string = string.upper()
+    substring = substring.upper()
 
     string_length = len(string)
     substring_length = len(substring)
