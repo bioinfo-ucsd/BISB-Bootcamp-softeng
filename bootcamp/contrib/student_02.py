@@ -1,32 +1,19 @@
-def count_substring(string, substring):
-    """Counts the number of occurrences of `substring` in `string`
+def get_complement(string):
+    """Reverse complements the DNA string input
 
     Parameters
     ----------
     string : str
-        The string to count within
-    substring : str
-        The value to count in string
+        The DNA string to reverse complement
 
     Returns
     -------
-    int
-        The number of times `substring` occurs in `string`
+    string_reverse
+        The reverse complement of the DNA string
 
     """
-    count = 0
     string = string.upper()
-    substring = substring.upper()
-
-    string_length = len(string)
-    substring_length = len(substring)
-    n_subsequences = string_length - substring_length + 1
-
-    for i in range(n_subsequences):
-        left_bound = i
-        right_bound = i + substring_length
-        candidate_substring = string[left_bound:right_bound]
-        if candidate_substring == substring:
-            count += 1
-
-    return count
+    rev_dna = string[::-1]
+    dna_dict = {"A": "T", "G": "C", "C": "G", "T": "A"}
+    string_reverse = ''.join([dna_dict[x] for x in rev_dna if x in dna_dict])
+    return string_reverse
