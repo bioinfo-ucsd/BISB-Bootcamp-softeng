@@ -26,3 +26,30 @@ def test_count_substring_none():
     expected_count = 0
     observed_count = count_substring(test_string, test_substring)
     assert expected_count == observed_count
+
+
+def test_count_substring_case_cap():
+    test_string = "CGCTAGCGT"
+    test_substring = "CGT"
+
+    expected_count = 1
+    observed_count = count_substring(test_string, test_substring)
+    assert expected_count == observed_count
+
+
+def test_count_substring_case_lower():
+    test_string = "CGCTAGCGT"
+    test_substring = "cgt"
+
+    expected_count = 1
+    observed_count = count_substring(test_string, test_substring)
+    assert expected_count == observed_count
+
+
+def test_count_substring_case_mix():
+    test_string = "CGCTAGCGT"
+    test_substring = "CgT"
+
+    expected_count = 1
+    observed_count = count_substring(test_string, test_substring)
+    assert expected_count == observed_count
