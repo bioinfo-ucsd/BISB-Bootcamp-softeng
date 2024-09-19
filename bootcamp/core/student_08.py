@@ -19,6 +19,8 @@ def count_substring(string, substring):
     string_length = len(string)
     substring_length = len(substring)
     n_subsequences = string_length - substring_length + 1
+    string = string.upper()
+    substring = substring.upper()
 
     for i in range(n_subsequences):
         left_bound = i
