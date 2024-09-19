@@ -19,7 +19,7 @@
 2. Authenticate GitHub from your computer and allow git to remember by caching your GitHub credentials. See [this page](https://docs.github.com/en/github/using-git/caching-your-github-credentials-in-git) for details. We suggest using the GitHub Command Line Interface (CLI), `gh`, which is installed in the `bootcamp` conda environment on DataHub. Start a new terminal session and run the following.
 
     ```bash
-    source activate bootcamp
+    mamba activate bootcamp
     gh auth login -p https -w
     ```
 
@@ -36,6 +36,7 @@ We can make a local copy by **cloning** the repo.
 - **Clone** the repository
 
 ```bash
+cd ~/private
 git clone https://github.com/bioinfo-ucsd/BISB-Bootcamp-softeng.git
 cd BISB-Bootcamp-softeng
 ```
