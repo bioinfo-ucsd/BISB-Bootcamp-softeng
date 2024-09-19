@@ -12,6 +12,6 @@ def len_substring(string):
         The length of the string
 
     """
-    
+
     string_length = len(string)
     return string_length
